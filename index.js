@@ -14,8 +14,8 @@ const registerRoute = require('./routes/auth/register');
 const loginRoute = require('./routes/auth/login');
 const adminLoginRoute = require('./routes/auth/adminLogin');
 const requirementsRoute = require('./routes/data/requirements');
-const donationsRoute = require('./routes/data/donations'); // Add this
-const storiesRoute = require('./routes/data/stories'); // Add this
+// const donationsRoute = require('./routes/data/donations'); // Add this
+// const storiesRoute = require('./routes/data/stories'); // Add this
 const medicalRequirementsRoute = require('./routes/data/medicalRequirements'); // Add this
 const expenditureRoute = require('./routes/data/expenditure');
 const residentRoute = require('./routes/data/residents')
@@ -24,8 +24,8 @@ app.use('/auth/register', registerRoute);
 app.use('/auth/login', loginRoute);
 app.use('/auth/admin/login', adminLoginRoute);
 app.use('/requirements', requirementsRoute);
-app.use('/donations', donationsRoute); // Mount the donations route
-app.use('/stories', storiesRoute); // Mount the stories route
+// app.use('/donations', donationsRoute); // Mount the donations route
+// app.use('/stories', storiesRoute); // Mount the stories route
 app.use('/medical-requirements', medicalRequirementsRoute); // Mount the route
 app.use('/expenditure', expenditureRoute);
 app.use('/data' , residentRoute);
